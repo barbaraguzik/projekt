@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hafciarstwo">
+    <meta name="keywords" content="haftowanie, hafciarstwo">
+    <meta name="author" content="Barbara Guzik">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wzory</title>
+    <link rel="icon" type="image/x-icon" href="grafiki/ikona.png">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)" href="stylelaptop.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 991px)" href="styletablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 599px)" href="styletelefon.css">
+    <script src="skrypty/datagodzina.js"></script>
+    <script src="skrypty/menu.js"></script>
+</head>
+<body>
+    <header>
+        <div id="zakladka1">
+            <div id="caloscmenu">
+            <img class="menuklik" onclick="rozwin()" src="grafiki/menu.png" alt="menu rozwijane">
+            <div id="divmenu">
+                <table>
+                    <tr><td><a href="poczatek.html">Od czego zacząć?</a></td></tr>
+                    <tr><td><a href="sciegi.html">Podstawowe ściegi</a></td></tr>
+                    <tr><td><a href="wzory.html">Wzory</a></td></tr>
+                    <tr><td><a href="galeria.html">Galeria</a></td></tr>
+                    <tr><td><a href="koszt.html">Koszt projektu</a></td></tr>
+                    <tr id="forum"><td><a href="forum.php">Forum</a></td></tr>
+                </table>
+            </div>
+        </div>
+        </div>
+        <div id="zakladka2"><a href="index.html">Hafciarstwo</a></div>
+        <div id="zakladka3"><a href="forum.php">Forum</a></div>
+        <div id="zakladka4"><p id="data"></p></div>
+    </header>
+    <main>
+        <div id="tytul">
+            <h1>Skąd brać wzory?</h1>
+            <p>Są różne sposoby na ich uzyskanie: </p>
+            <ul>
+                <li>Własny projekt - jeśli chcesz, możesz naszkicować co tylko Ci się zamarzy!</li>
+                <li>Gotowe wzory nadrukowane na materiał - w internecie można znależć wiele opcji do kupienia, które zazwyczaj zawierają potrzebną mulinę i instrukcję. Czasem można znależć je także w sklepach papierniczych,</li>
+                <li>Książki/magazyny ze wzorami o określonej tematyce - wystarczy je odrysować od szablonu, a znajdziesz tam bardzo szczegółowe porady,</li>
+                <li>Wzory online - tworzone na przykład przez DMC. Zawierają również darmowe wersje.</li>
+            </ul>
+
+                <p>Wszystkie poniższe wzory są dostępne za darmo na oficjalnej stronie <a id="link" href="https://www.dmc.com/GB/en-GB">DMC</a>:</p>
+
+                <label for="zaawansowanie">Stopień:</label>
+                <select id="zaawansowanie">
+                    <option selected value="wybierz">Wybierz opcję</option>
+                    <option value="poczatkujacy">Początkujący</option>
+                    <option value="sredniozaawansowany">Średniozaawansowany</option>
+                    <option value="zaawansowany">Zaawansowany</option>
+                </select>
+
+                <div id="beg" class="wzorki">
+                    <a href="https://www.dmc.com/GB/en-GB/products/lucky-maneki-neko-cat"><img class="zdjecia" src="grafiki/beg1.jpg" alt="wzór początkujący 1"></a>
+                    <a href="https://www.dmc.com/GB/en-GB/products/carousel-horse"><img class="zdjecia" src="grafiki/beg2.jpg" alt="wzór początkujący 2"></a>
+                    <a href="https://www.dmc.com/GB/en-GB/products/corgi"><img class="zdjecia" src="grafiki/beg3.jpg" alt="wzór początkujący 3"></a>
+                </div>
+
+                <div id="inter" class="wzorki">
+                    <a href="https://www.dmc.com/GB/en-GB/products/embroidery-pattern-toadstool"><img class="zdjecia" src="grafiki/int1.jpg" alt="wzór średniozaawansowany 1"></a>
+                    <a href="https://www.dmc.com/GB/en-GB/products/lavender-field"><img class="zdjecia" src="grafiki/int2.jpg" alt="wzór średniozaawansowany 2"></a>
+                    <a href="https://www.dmc.com/GB/en-GB/products/mouline-pattern-vase"><img class="zdjecia" src="grafiki/int3.jpg" alt="wzór średniozaawansowany 3"></a>
+                </div>
+
+                <div id="adv" class="wzorki">
+                    <a href="https://www.dmc.com/GB/en-GB/products/pink-cockatoo-embroidery"><img class="zdjecia" src="grafiki/adv1.jpg" alt="wzór zaawansowany 1"></a>
+                    <a href="https://www.dmc.com/GB/en-GB/products/table-flowers"><img class="zdjecia" src="grafiki/adv2.jpg" alt="wzór zaawansowany 2"></a>
+                    <a href="https://www.dmc.com/GB/en-GB/products/utility-non-sporting-dogs"><img class="zdjecia" src="grafiki/adv3.jpg" alt="wzór zaawansowany 3"></a>
+                </div>           
+        </div>
+    </main>
+    <script src="skrypty/wzory.js"></script>
+</body>
+</html>

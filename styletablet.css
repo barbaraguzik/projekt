@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(fonty/montserrat/Montserrat-Light.otf);
+    font-weight: 1;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: allura;
+    src: url(fonty/allura/Allura-Regular.otf);
+    font-weight: 1;
+    font-style: normal;
+}
+
+body{
+    margin: auto;
+    background-image: url("grafiki/tlo2.jpg");
+    font-family: montserrat;
+}
+
+header{
+    height: 70px;
+    background-color: #665959;
+    margin-bottom: auto;
+}
+
+#zakladka1,#zakladka2,#zakladka3,#zakladka4{
+    height: 70px;
+    float: left;
+    background-color: #665959;
+    text-align: center;
+    margin-bottom: auto;
+    color: #e8e8e8;
+    margin: 0;
+    font-family: allura;
+    line-height: 70px;
+}
+
+#zakladka1{ 
+    width: 10%;
+    height: 70px;
+}
+
+#zakladka2{
+    width: 50%;
+    font-size: 40px;
+
+    vertical-align: middle;
+}
+
+#zakladka3{
+    width: 20%;
+    border-left: 2px dashed #e6e6e6;
+    font-size: 30px;
+    
+}
+
+#zakladka4{
+    width: 20%;
+    border-left: 2px dashed #e6e6e6;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #e8e8e8;
+}
+
+main{
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6e6e6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#tytul{
+    margin: auto;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    padding: 30px;
+}
+
+img{
+    max-width: 60%;
+    height: auto;
+    width: auto;
+    padding: 20px;
+}
+
+.img1{
+    max-width: 40%;
+    width: auto;
+    height: auto;
+}
+
+.img2{
+    max-width: 30%;
+    width: auto;
+    height: auto;
+    padding: 3px;
+    margin: 0;
+}
+
+ul{
+    text-align: left;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+#link{
+    text-decoration: underline;
+    color: black;
+}
+
+.zdjecia{
+    max-width: 30%;
+    height: auto;
+    width: auto;
+}
+
+.wzorki{
+    display: none;
+}
+
+select{
+    margin-bottom: 2%;
+}
+
+#galeria1{
+    padding: 0;
+}
+
+#glownezdjecie{
+    height: auto;
+    width: auto;
+    padding: 3px;
+}
+
+#galeria2{
+    padding: 1%;
+}
+
+.gal{
+    max-width: 10%;
+    opacity: 0.5;
+    height: auto;
+    width: auto;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.gal:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.przycisk{
+    background-color: #cfb2a7;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: small; 
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.przycisk:hover{
+    border: 1px solid #9f654f;
+    cursor: pointer;
+}
+
+.menuklik{
+    cursor: pointer;
+    height: 38px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+
+#divmenu{
+    margin: 0;
+    padding: 0;
+    background-color: #665959;
+    display: none;
+    width: 1000%;
+    position: relative;
+    z-index: 100;
+}
+
+#divmenu a{
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#formularz{
+    text-align: left;
+    padding: 20px;
+}
+
+form p{
+    font-weight: bold;
+}
+
+#data{
+    text-align: center;
+    line-height: 0.9;
+    padding: 20px;
+}
+
+table{
+    padding: 0px;
+    margin: 0px;
+    line-height: 3;
+    width: 100%;
+}
+
+table, tr, td {
+    border: 2px dashed #e6e6e6;
+    border-right: none;
+    border-left: none;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+td{
+    line-height: normal;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    margin: 0;
+}
+
+tbody{
+    margin: 0;
+    padding: 0;
+}
+
+#forum{
+    display: none;
+}
+
+textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea::placeholder {
+    color: #665959;
+}
+
+.login{
+    width: 90%;
+    margin: auto;
+}
+
+.komentarz{
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+
+#komentarze{
+    width: 80%;
+    margin: auto;
+}

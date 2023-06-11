@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hafciarstwo">
+    <meta name="keywords" content="haftowanie, hafciarstwo">
+    <meta name="author" content="Barbara Guzik">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator kosztu</title>
+    <link rel="icon" type="image/x-icon" href="grafiki/ikona.png">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)" href="stylelaptop.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 991px)" href="styletablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 599px)" href="styletelefon.css">
+    <script src="skrypty/datagodzina.js"></script>
+    <script src="skrypty/menu.js"></script>
+    <script src="skrypty/koszt.js"></script>
+</head>
+<body>
+    <header>
+        <div id="zakladka1">
+            <div id="caloscmenu">
+            <img class="menuklik" onclick="rozwin()" src="grafiki/menu.png" alt="menu rozwijane">
+            <div id="divmenu">
+                <table>
+                    <tr><td><a href="poczatek.html">Od czego zacząć?</a></td></tr>
+                    <tr><td><a href="sciegi.html">Podstawowe ściegi</a></td></tr>
+                    <tr><td><a href="wzory.html">Wzory</a></td></tr>
+                    <tr><td><a href="galeria.html">Galeria</a></td></tr>
+                    <tr><td><a href="koszt.html">Koszt projektu</a></td></tr>
+                    <tr id="forum"><td><a href="forum.php">Forum</a></td></tr>
+                </table>
+            </div>
+        </div>
+        </div>
+        <div id="zakladka2"><a href="index.html">Hafciarstwo</a></div>
+        <div id="zakladka3"><a href="forum.php">Forum</a></div>
+        <div id="zakladka4"><p id="data"></p></div>
+    </header>
+    <main>
+        <div id="tytul">
+            <h1>Czy haftowanie to drogie hobby?</h1>
+            <p>Oblicz cenę projektu, który chcesz wykonać!</p>
+
+            <div id="formularz">
+            <form>
+                <p>Wybierz materiał:</p>
+                    <input type="radio" value="len" name="material" id="len"><label for="len">Płótno lniane</label><br>
+                    <input type="radio" value="kanwa" name="material" id="kanwa"><label for="kanwa">Kanwa plastikowa</label><br>
+
+                <p>Ile materiału potrzebujesz? (podaj bok kwadratu w cm):</p>
+                    <input type="number" id="materialcm" min="5" max="100" value="5">
+
+                <p>Wybierz markę muliny:</p>
+                    <input type="radio" value="dmc" name="mulina" id="dmc"><label for="dmc">DMC</label><br>
+                    <input type="radio" value="ariadna" name="mulina" id="ariadna"><label for="ariadna">Ariadna</label><br>
+
+                <p>Podaj ilość motków:</p>
+                    <input type="number" id="motki" min="1" max="50" value="1">
+
+                    <br><br><button class="przycisk" onclick="oblicz()">Oblicz koszt!</button>
+                    <button class="przycisk" onclick="resetuj()">Resetuj</button>
+            </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
